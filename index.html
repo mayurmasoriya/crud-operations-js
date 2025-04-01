@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Operation JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Students Registrations</h1>
+            <form action="" id="record-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="Number" id="age" placeholder="Age" required>
+                <input type="text" id="email" placeholder="Email" required>
+                <button type="submit">Add Record</button>
+                <input type="hidden" name="" id="edit-index" value="-1">
+            </form>
+        </div>
+        <div class="right">
+            <h2>Records</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Email</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="record-list"></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
